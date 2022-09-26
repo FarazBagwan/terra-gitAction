@@ -33,6 +33,7 @@ resource "aws_instance" "win_server" {
   key_name      = "MyEC2Instance"
   security_groups = [ "mySG" ]
   iam_instance_profile = aws_iam_instance_profile.test_profile.name
+  user_data = file("script.ps1")
 
   tags = {
     Name = var.ec2_name
