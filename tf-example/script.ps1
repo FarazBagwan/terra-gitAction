@@ -1,3 +1,4 @@
+<powershell>
 net user Administrator "Password#1"
 Enable-PSRemoting -Confirm:$false
 winrm quickconfig
@@ -14,3 +15,4 @@ choco
 choco install chef-workstation --force -Confirm:$false
 chef --version
 hostname
+</powershell>
