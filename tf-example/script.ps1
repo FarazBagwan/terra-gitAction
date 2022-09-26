@@ -1,4 +1,3 @@
-#!/bin/bash
 net user Administrator "Password#1"
 Enable-PSRemoting -Confirm:$false
 winrm quickconfig
