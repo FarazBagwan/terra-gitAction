@@ -8,6 +8,7 @@ name: Provision t2.micro EC2
 #        required: true
 #        default: 'Win-test'
 #        type: string
+# ..delete this line
 
 on:
   push:
