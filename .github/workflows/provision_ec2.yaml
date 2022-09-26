@@ -40,6 +40,7 @@ jobs:
         #  TF_VAR_ec2_name:  "${{ github.event.inputs.ec2-name }}"
         run: |
           cd tf-example/
+          terraform destroy -auto-approve
           terraform init
           terraform validate
           terraform plan 
